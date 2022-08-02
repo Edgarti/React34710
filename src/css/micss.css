@@ -242,5 +242,7 @@ body {
     background-color:#bfc1c1;
     height: 150px;
     color: #c0c0c0;
-    font-size: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #F5F5F5;
 }

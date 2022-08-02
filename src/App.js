@@ -1,8 +1,9 @@
 
 import logo from './logo.svg';
 import './App.css';
-import  Footer01 from './Componente/Footer01';
-import  Navbar from './Componente/Navbar.js';
+import  Footer01 from './components/Footer01';
+import  Navbar from './components/Navbar.js';
+import ItemListContainer from './components/ItemListContainer.js';
 
 
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
    <Navbar />  
+   <ItemListContainer />
     {/* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" /> 
@@ -26,9 +28,9 @@ function App() {
         </a>
       </header>
     </div>*/}
-    <footer>
+    {/* <footer> */}
      <Footer01 />
-    </footer>
+    {/* </footer> */}
     </> 
   );
 }
