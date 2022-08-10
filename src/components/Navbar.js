@@ -4,6 +4,7 @@ import "../css/micss.css"
 import logo from "../asset/imagen/logo.png"
 import CartWidget from "./CartWidget"
 import WhatsApp from "./WhatsApp";
+import { Link} from "react-router-dom"
 
 function Navbar() {
     return (

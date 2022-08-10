@@ -2,16 +2,16 @@ import React from "react";
 import "../css/micss.css"
 
 
-function ItemCount() {
+function ItemCount(props) {
 
-    const [stock ,setStock] = React.useState(1);
+    const [cout ,setcout] = React.useState(1);
 
    function aumentarContador ()  {
-    setStock(stock + 1);
+    setcout(cout+ 1);
       };
 
       function diminuirContador ()  {
-        stock != 0 ? setStock(stock - 1): setStock(stock = 1)
+        cout != 0 ? setcout(cout - 1): setcout(cout = 0)
       };
     
   
@@ -20,13 +20,13 @@ function ItemCount() {
           <div >
             <label>
             <button  class="text-center" onClick={diminuirContador}>-</button>
-            <input   type="number" class="text-center" min="1" value={stock} />
+            <input   type="number" class="text-center" min="1" value={cout} />
             <button  class="text-center" onClick={aumentarContador }>+ </button>
             </label>
+            <h3> Stock {props.stock}</h3>
           </div>
         </>
     )
-    
 }
 
 export default ItemCount;
