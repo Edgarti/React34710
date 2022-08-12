@@ -25,11 +25,11 @@ function ItemListContainer(props) {
         <h1>{props.saludo}</h1>
         <hr/>
         <h2> Productos</h2>
-        <p>Codigo: {datos[0].id}</p>
+        {/* <p>Codigo: {datos[0].id}</p>
         <p>Ref: {datos[0].title}</p>
         <p>Valor: {datos[0].price}</p>
         <p>Moneda: {datos[0].moneda}</p>
-        <p>Stock: {datos[0].stock}</p>
+        <p>Stock: {datos[0].stock}</p>  */}
 
         <button className="button"> Detalle del producto</button>
         <hr/>
