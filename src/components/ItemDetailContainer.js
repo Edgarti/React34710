@@ -22,8 +22,9 @@ function ItemDetailContainer() {
  
     return(
         <>
-        <h3> cardContainaer</h3>
+           {/* <h3> cardContainaer</h3> */}
            <CardContainer />   
+  
          {/* <ItemDetail /> */}
         </>
     )

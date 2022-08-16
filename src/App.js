@@ -23,6 +23,7 @@ function App() {
            <Route path="/list" element={ <ItemListContainer saludo="Saludo desde el componente App-props"/>}/>  
            <Route path="/contador" element={ <ItemCount initial={1} stock={35}/>}/> 
            <Route path="/ItemDetail" element={ <ItemDetail />}/> 
+           <Route path="*" element={<h1>404: No encontrado</h1>} />
            {/* <Route path="/ItemDetail" element={ <ItemDetail />}/>  */}
         </Routes> 
       <ItemCount initial={1} stock={35}/>
