@@ -18,12 +18,12 @@ function ItemCount(props) {
     return(
         <>
           <div >
-            <label>
+            {/* <label>
             <button  class="text-center" onClick={diminuirContador}>-</button>
             <input   type="number" class="text-center" min="1" value={cout} />
             <button  class="text-center" onClick={aumentarContador }>+ </button>
-            </label>
-            <h3> Stock {props.stock}</h3>
+            </label> */}
+            <h5> Stock: {props.stock} Unidades</h5>
           </div>
         </>
     )

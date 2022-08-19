@@ -6,6 +6,7 @@ import  Navbar from './components/Navbar.js';
 import ItemListContainer from './components/ItemListContainer.js';
 import ItemCount from './components/ItemCount';
 import ItemDetail from './components/ItemDetail'
+import Cart from './components/Cart'
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 
 import ItemDetailContainer from './components/ItemDetailContainer.js'
@@ -23,10 +24,11 @@ function App() {
            <Route path="/list" element={ <ItemListContainer saludo="Saludo desde el componente App-props"/>}/>  
            <Route path="/contador" element={ <ItemCount initial={1} stock={35}/>}/> 
            <Route path="/ItemDetail" element={ <ItemDetail />}/> 
+           <Route path="/Cart" element={ <Cart/>}/> 
            <Route path="*" element={<h1>404: No encontrado</h1>} />
            {/* <Route path="/ItemDetail" element={ <ItemDetail />}/>  */}
         </Routes> 
-      <ItemCount initial={1} stock={35}/>
+      {/* <ItemCount initial={1} stock={35}/> */}
      <Footer01 /> 
    </BrowserRouter> 
    </div>
