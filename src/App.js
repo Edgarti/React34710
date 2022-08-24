@@ -10,9 +10,11 @@ import Cart from './components/Cart'
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 
 import ItemDetailContainer from './components/ItemDetailContainer.js'
-
+import firebaseBD from './service/firebase'
+import firestoreBD from './service/firebase';
 
 function App() {
+  console.log(firestoreBD);
   return (
     <>
      <div style={{padding: 10, height: 350, textAlign: "center"}}>
